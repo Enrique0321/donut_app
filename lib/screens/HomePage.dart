@@ -1,3 +1,4 @@
+import 'package:donut_app/utils/my_tab.dart';
 import 'package:flutter/material.dart';
 
 class HomePage extends StatefulWidget {
@@ -8,6 +9,19 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
+  List<Widget> myTabs = [
+    //Donut
+    const MyTab(iconPath: "lib/icons/donut.png", text: "Donut"),
+    //Burguer
+    const MyTab(iconPath: "lib/icons/burger.png", text: "Burger"),
+    //smoothie
+    const MyTab(iconPath: "lib/icons/smoothie.png", text: "Smoothie"),
+    //pancake
+    const MyTab(iconPath: "lib/icons/pancakes.png", text: "Pancakes"),
+    //pizza
+    const MyTab(iconPath: "lib/icons/pizza.png", text: "Pizza"),
+  ];
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -23,17 +37,38 @@ class _HomePageState extends State<HomePage> {
           ),
         ],
       ),
-      body: const Column(
-        children: [
-          //Texto principal
-          Text('Hola Mbapech'),
-        ],
+      body: DefaultTabController(
+        length: myTabs.length,
+        child: Column(
+          children: [
+            //Texto principal
+            const Padding(
+              padding: EdgeInsets.only(left: 24.0),
+              child: Row(
+                children: [
+                  Text("I wan to ", style: TextStyle(fontSize: 24)),
+                  Text(
+                    "eat",
+                    style: TextStyle(
+                      fontSize: 24,
+                      fontWeight: FontWeight.bold,
 
-        //Pestañas (TabBar)
+                      //Subrayado
+                      decoration: TextDecoration.underline,
+                    ),
+                  ),
+                ],
+              ),
+            ),
 
-        //Contenido de las pestañas (TabBarView
+            //Pestañas (TabBar)
+            TabBar(tabs: myTabs),
 
-        //Carrrito de compras (Cart)
+            //Contenido de las pestañas (TabBarView)
+
+            //Carrrito de compras (Cart)
+          ],
+        ),
       ),
     );
   }
