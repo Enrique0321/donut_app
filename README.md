@@ -1,16 +1,59 @@
-# donut_app
+🍩 Donut App 
 
-A new Flutter project.
+A new Flutter project 🚀
 
-## Getting Started
+📋 Description of Functionalities
 
-This project is a starting point for a Flutter application.
+Donut App 8SC is a Flutter mobile application designed with a fast-food theme. It currently serves as the main screen (HomePage) of the project and includes the following features:
 
-A few resources to get you started if this is your first Flutter project:
+🍔 A custom AppBar with functional icons on both sides (menu and profile).
+📱 A dynamic interface that can be easily updated through state changes.
+🧩 A structured layout for organizing visual components like titles, tabs, and the shopping cart.
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+🛠️ Main Widgets Overview
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+MaterialApp: Root widget that defines the app’s structure, navigation, and theme. 🎨
+
+HomePage (StatefulWidget): Main screen allowing dynamic updates and state management. 🔄
+
+Scaffold: Provides the basic page layout and visual structure. 🏗️
+
+AppBar: Top navigation bar containing menu and profile icons. 📌
+
+Column: Organizes content vertically, including text, categories, and cart preview. 📑
+
+Icon: Represents visual actions and navigation elements in the AppBar. 🖼️
+
+💻 Technologies Used
+
+Framework: Flutter
+
+Language: Dart
+
+IDE: Visual Studio Code 🖥️✨
+
+📂 Project Structure
+
+Main Folder: donut_app 🍩
+
+Source Code: lib/ 🗂️
+
+Main File: main.dart 📄
+
+Home Screen: screens/Home_Page.dart 🏠
+
+Configuration File: pubspec.yaml 📜
+
+🎬 Demo
+
+Currently, the app is in its initial stage — the interface is designed, but no functionalities are active yet. 🎥
+
+📚 Course Information
+
+Course: Mobile Application Programming 📱
+Instructor: Rodrigo Fidel Gaxiola Sosa 👨‍🏫
+
+🔗 Credits
+
+Original design inspiration: Dribbble — App UI
+ 🎨
